@@ -13,9 +13,56 @@ p > a{
     text-decoration: none;
 }
 
+#soru_kutusu{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+ol{
+    list-style: upper-latin;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 100px;
+    flex-direction: column;
+}
+
+input,li{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 15px;
+    display: flex;
+}
+
+.my-button {
+    padding: 1rem;
+    border: solid red 4px;
+    width: 25%; 
+    margin-bottom: 20px;
+    background-color: #000;
+    border-radius: 25px;
+}
+  
+
+button{
+    transition: 500ms;
+    color: azure;
+    cursor: pointer;
+}
+
+button:hover{
+    width: 50%;
+    color: chartreuse;
+    border: solid 4px chartreuse;
+}
+
 img{
-    width: 500px;
-    height: auto;
+    width: 100%;
 }
 
 section{

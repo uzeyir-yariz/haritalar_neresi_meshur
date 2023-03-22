@@ -54,10 +54,42 @@ const sorular = {
   }
   
   function cevabiKontrolEt(userAnswer) {
+    // var bölge = Selected_picture;
+
+    let ft1 = document.getElementById("ftb_1"),
+    ft2 = document.getElementById("ftb_2"),
+    ft3 = document.getElementById("ftb_3");
+
+    /* pict.forEach((picture) => {
+      if (picture.getAttribute("title") === Selected_picture) {
+        picture.style.backgroundColor = "green";
+      }
+    }); */
+    
+    
     if (userAnswer === Correct_answer) {
-      alert("Tebrikler, doğru cevap!");
+      alert("tebrikler, doğru cevap!");
+      // bölge.backgroundColor  = 'blue';
+      // bölge.body.style.backgroundColor = 'red';
+      // Selected_picture.setAttribute("class" , "bg-color");
+
+      if(ft1.getAttribute("title") === Selected_picture){
+        ft1.style.backgroundColor = "green";
+      }else if(ft2.getAttribute("title") === Selected_picture){
+        ft2.style.backgroundColor = "green";
+      }else if(ft3.getAttribute("title") === Selected_picture){
+        ft3.style.backgroundColor = "green";
+      }
+      
     } else {
-      alert("Maalesef, yanlış cevap! Doğru cevap: " + Correct_answer);
+      alert("malesef, yanlış cevap! Doğru cevap > " + Correct_answer);
+      if(ft1.getAttribute("title") === Selected_picture){
+        ft1.style.backgroundColor = "red";
+      }else if(ft2.getAttribute("title") === Selected_picture){
+        ft2.style.backgroundColor = "red";
+      }else if(ft3.getAttribute("title") === Selected_picture){
+        ft3.style.backgroundColor = "red";
+      }
     }
   }
   
